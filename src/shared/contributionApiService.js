@@ -1,7 +1,7 @@
 import { contributions } from "../stores/contributionStore";
 
 export function getAllContributions() {
-  fetch("http://mv-breakfast-challenge.herokuapp.com/contribution/list", {
+  fetch("https://mv-breakfast-challenge.herokuapp.com/contribution/list", {
     mode: "cors",
   })
     .then((response) => response.json())
@@ -10,7 +10,7 @@ export function getAllContributions() {
 
 function saveContribution(contributionName, employeeId) {
   fetch(
-    "http://mv-breakfast-challenge.herokuapp.com/contribution/save/" +
+    "https://mv-breakfast-challenge.herokuapp.com/contribution/save/" +
       employeeId,
     {
       mode: "cors",

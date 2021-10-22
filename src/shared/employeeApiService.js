@@ -2,7 +2,7 @@ import { employees } from "../stores/employeeStore";
 
 export async function getAllEmployees() {
   const response = await fetch(
-    "http://mv-breakfast-challenge.herokuapp.com/employee/list",
+    "https://mv-breakfast-challenge.herokuapp.com/employee/list",
     {
       mode: "cors",
     }
@@ -14,7 +14,7 @@ export async function getAllEmployees() {
 
 export async function saveEmployee(name, cpf) {
   const response = await fetch(
-    "http://mv-breakfast-challenge.herokuapp.com/employee/save",
+    "https://mv-breakfast-challenge.herokuapp.com/employee/save",
     {
       mode: "cors",
       method: "POST",
